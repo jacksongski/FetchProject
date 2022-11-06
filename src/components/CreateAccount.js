@@ -70,7 +70,7 @@ export default function CreateAccount() {
               placeholder="Enter email"
               type="email"
               value={email}
-              isValid={email}
+              isValid={email.includes("@")}
               onChange={(e) => setEmail(e.target.value)}
             ></Form.Control>
           </Form.Group>
